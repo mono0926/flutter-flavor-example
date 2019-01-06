@@ -426,7 +426,7 @@
 			};
 			name = Profile;
 		};
-		97C147031CF9000F007C117D /* DebugDevelopment */ = {
+		97C147031CF9000F007C117D /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10A21E207260044CFDB /* DebugDevelopment.xcconfig */;
 			buildSettings = {
@@ -478,9 +478,9 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = DebugDevelopment;
+			name = "Debug-Development";
 		};
-		97C147061CF9000F007C117D /* DebugDevelopment */ = {
+		97C147061CF9000F007C117D /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10A21E207260044CFDB /* DebugDevelopment.xcconfig */;
 			buildSettings = {
@@ -506,9 +506,9 @@
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = DebugDevelopment;
+			name = "Debug-Development";
 		};
-		FEC7B10421E1ECD00044CFDB /* ReleaseProduction */ = {
+		FEC7B10421E1ECD00044CFDB /* Release-Production */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* ReleaseProduction.xcconfig */;
 			buildSettings = {
@@ -555,9 +555,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = ReleaseProduction;
+			name = "Release-Production";
 		};
-		FEC7B10521E1ECD00044CFDB /* ReleaseProduction */ = {
+		FEC7B10521E1ECD00044CFDB /* Release-Production */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* ReleaseProduction.xcconfig */;
 			buildSettings = {
@@ -582,9 +582,9 @@
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = ReleaseProduction;
+			name = "Release-Production";
 		};
-		FEC7B10621E1ECD20044CFDB /* ReleaseStaging */ = {
+		FEC7B10621E1ECD20044CFDB /* Release-Staging */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10D21E2072C0044CFDB /* ReleaseStaging.xcconfig */;
 			buildSettings = {
@@ -631,9 +631,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = ReleaseStaging;
+			name = "Release-Staging";
 		};
-		FEC7B10721E1ECD20044CFDB /* ReleaseStaging */ = {
+		FEC7B10721E1ECD20044CFDB /* Release-Staging */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10D21E2072C0044CFDB /* ReleaseStaging.xcconfig */;
 			buildSettings = {
@@ -658,9 +658,9 @@
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = ReleaseStaging;
+			name = "Release-Staging";
 		};
-		FEC7B10821E1ECD50044CFDB /* ReleaseDevelopment */ = {
+		FEC7B10821E1ECD50044CFDB /* Release-Development */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B11221E207950044CFDB /* ReleaseDevelopment.xcconfig */;
 			buildSettings = {
@@ -707,9 +707,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = ReleaseDevelopment;
+			name = "Release-Development";
 		};
-		FEC7B10921E1ECD50044CFDB /* ReleaseDevelopment */ = {
+		FEC7B10921E1ECD50044CFDB /* Release-Development */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B11221E207950044CFDB /* ReleaseDevelopment.xcconfig */;
 			buildSettings = {
@@ -734,7 +734,7 @@
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = ReleaseDevelopment;
+			name = "Release-Development";
 		};
 /* End XCBuildConfiguration section */
 
@@ -742,26 +742,26 @@
 		97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97C147031CF9000F007C117D /* DebugDevelopment */,
-				FEC7B10821E1ECD50044CFDB /* ReleaseDevelopment */,
-				FEC7B10621E1ECD20044CFDB /* ReleaseStaging */,
-				FEC7B10421E1ECD00044CFDB /* ReleaseProduction */,
+				97C147031CF9000F007C117D /* Debug-Development */,
+				FEC7B10821E1ECD50044CFDB /* Release-Development */,
+				FEC7B10621E1ECD20044CFDB /* Release-Staging */,
+				FEC7B10421E1ECD00044CFDB /* Release-Production */,
 				249021D3217E4FDB00AE95B9 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = DebugDevelopment;
+			defaultConfigurationName = "Debug-Development";
 		};
 		97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97C147061CF9000F007C117D /* DebugDevelopment */,
-				FEC7B10921E1ECD50044CFDB /* ReleaseDevelopment */,
-				FEC7B10721E1ECD20044CFDB /* ReleaseStaging */,
-				FEC7B10521E1ECD00044CFDB /* ReleaseProduction */,
+				97C147061CF9000F007C117D /* Debug-Development */,
+				FEC7B10921E1ECD50044CFDB /* Release-Development */,
+				FEC7B10721E1ECD20044CFDB /* Release-Staging */,
+				FEC7B10521E1ECD00044CFDB /* Release-Production */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = DebugDevelopment;
+			defaultConfigurationName = "Debug-Development";
 		};
 /* End XCConfigurationList section */
 	};
