@@ -87,6 +87,26 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+          FutureBuilder<PackageInfo>(
+            future: PackageInfo.fromPlatform(),
+            builder: (context, snap) {
+              if (!snap.hasData) {
+                return const Center(child: CircularProgressIndicator());
+              }
+              final info = snap.data;
+              return AboutListTile(
+                icon: const Icon(Icons.info),
+                applicationName: info.appName,
+                applicationIcon: const Icon(Icons.camera), // TODO:
+                applicationVersion: info.version,
+                applicationLegalese: 'desc',
+                aboutBoxChildren: <Widget>[
+                  Text('build: ${info.buildNumber}'),
+                  Text('id: ${info.packageName}')
+                ],
+              );
+            },
+          ),
         ],
       ),
     );
