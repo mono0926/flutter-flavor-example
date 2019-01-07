@@ -1,20 +1,23 @@
 import 'package:flutter/widgets.dart';
 import 'package:meta/meta.dart';
 
-class AppConfig extends InheritedWidget {
-  final String flavor;
+enum Flavor { development, staging, production }
 
-  const AppConfig({
+class FlavorProvider extends InheritedWidget {
+  final Flavor flavor;
+
+  const FlavorProvider({
     Key key,
     @required this.flavor,
     @required Widget child,
   })  : assert(child != null),
         super(key: key, child: child);
 
-  static AppConfig of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(AppConfig) as AppConfig;
-  }
+  static Flavor of(BuildContext context) => (context
+          .ancestorInheritedElementForWidgetOfExactType(FlavorProvider)
+          .widget as FlavorProvider)
+      .flavor;
 
   @override
-  bool updateShouldNotify(AppConfig oldWidget) => false;
+  bool updateShouldNotify(FlavorProvider oldWidget) => false;
 }

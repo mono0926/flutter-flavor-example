@@ -1,7 +1,7 @@
+import 'package:flavor_example/app.config.dart';
+import 'package:flavor_example/build_mode.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
-
-void main() => runApp(App());
 
 class App extends StatelessWidget {
   @override
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                         value: 'Value',
                         textStyle: const TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      _buildRow(label: 'appName', value: info.appName),
+                      _buildRow(label: 'flavor', value: info.appName),
                       _buildRow(label: 'packageName', value: info.packageName),
                       _buildRow(label: 'version', value: info.version),
                       _buildRow(label: 'buildNumber', value: info.buildNumber),
@@ -59,7 +59,34 @@ class HomePage extends StatelessWidget {
                 },
               ),
             ),
-          )
+          ),
+          const Padding(
+            padding: const EdgeInsets.all(8),
+            child: const Text('Flutter Info'),
+          ),
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Table(
+                columnWidths: {
+                  0: const FlexColumnWidth(1),
+                  1: const FlexColumnWidth(2)
+                },
+                border: TableBorder.all(),
+                children: [
+                  _buildRow(
+                    label: 'Label',
+                    value: 'Value',
+                    textStyle: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  _buildRow(label: 'buildMode', value: buildMode.toString()),
+                  _buildRow(
+                      label: 'flavor',
+                      value: FlavorProvider.of(context).toString()),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
