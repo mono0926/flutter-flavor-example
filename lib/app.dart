@@ -7,6 +7,7 @@ import 'package:package_info/package_info.dart';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // 適当に叩いてるだけ
     Firestore.instance.collection('foo').snapshots().listen(print);
 
     return const MaterialApp(
