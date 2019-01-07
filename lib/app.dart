@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flavor_example/app.config.dart';
 import 'package:flavor_example/build_mode.dart';
 import 'package:flutter/material.dart';
@@ -6,6 +7,8 @@ import 'package:package_info/package_info.dart';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Firestore.instance.collection('foo').snapshots().listen(print);
+
     return const MaterialApp(
       title: 'Flutter Flavor Demo',
       home: HomePage(),

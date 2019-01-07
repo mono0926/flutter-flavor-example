@@ -9,6 +9,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   simple_logger: any
   package_info: any
+  firebase_auth: any
+  cloud_firestore: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
