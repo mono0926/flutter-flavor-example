@@ -1,1 +1,2 @@
 FLUTTER_FLAVOR=Staging
+PRODUCT_BUNDLE_IDENTIFIER=com.mono0926.flavor.staging

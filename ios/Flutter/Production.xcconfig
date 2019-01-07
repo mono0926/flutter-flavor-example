@@ -1,1 +1,2 @@
 FLUTTER_FLAVOR=Production
+PRODUCT_BUNDLE_IDENTIFIER=com.mono0926.flavor
