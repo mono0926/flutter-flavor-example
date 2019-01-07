@@ -1,2 +1,3 @@
 FLUTTER_FLAVOR=Development
-PRODUCT_BUNDLE_IDENTIFIER=com.mono0926.flavor.development
+PRODUCT_BUNDLE_IDENTIFIER=com.mono0926.flavor-development
+DISPLAY_NAME=Flavor Dev
