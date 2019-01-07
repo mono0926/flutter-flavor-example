@@ -22,19 +22,23 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter Flavor Demo'),
       ),
-      body: FutureBuilder<PackageInfo>(
-        future: PackageInfo.fromPlatform(),
-        builder: (context, snap) {
-          if (!snap.hasData) {
-            return const CircularProgressIndicator();
-          }
-          final info = snap.data;
-          return ListView(
-            children: [
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Table(
+      body: ListView(
+        children: [
+          const Padding(
+            padding: const EdgeInsets.all(8),
+            child: const Text('PackageInfo'),
+          ),
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: FutureBuilder<PackageInfo>(
+                future: PackageInfo.fromPlatform(),
+                builder: (context, snap) {
+                  if (!snap.hasData) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                  final info = snap.data;
+                  return Table(
                     columnWidths: {
                       0: const FlexColumnWidth(1),
                       1: const FlexColumnWidth(2)
@@ -51,12 +55,12 @@ class HomePage extends StatelessWidget {
                       _buildRow(label: 'version', value: info.version),
                       _buildRow(label: 'buildNumber', value: info.buildNumber),
                     ],
-                  ),
-                ),
-              )
-            ],
-          );
-        },
+                  );
+                },
+              ),
+            ),
+          )
+        ],
       ),
     );
   }
