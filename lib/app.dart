@@ -30,6 +30,33 @@ class HomePage extends StatelessWidget {
         children: [
           const Padding(
             padding: const EdgeInsets.all(8),
+            child: const Text('Flutter Info'),
+          ),
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Table(
+                columnWidths: {
+                  0: const FlexColumnWidth(1),
+                  1: const FlexColumnWidth(2)
+                },
+                border: TableBorder.all(),
+                children: [
+                  _buildRow(
+                    label: 'Label',
+                    value: 'Value',
+                    textStyle: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  _buildRow(label: 'buildMode', value: buildMode.toString()),
+                  _buildRow(
+                      label: 'flavor',
+                      value: FlavorProvider.of(context).toString()),
+                ],
+              ),
+            ),
+          ),
+          const Padding(
+            padding: const EdgeInsets.all(8),
             child: const Text('PackageInfo'),
           ),
           Card(
@@ -61,33 +88,6 @@ class HomePage extends StatelessWidget {
                     ],
                   );
                 },
-              ),
-            ),
-          ),
-          const Padding(
-            padding: const EdgeInsets.all(8),
-            child: const Text('Flutter Info'),
-          ),
-          Card(
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: Table(
-                columnWidths: {
-                  0: const FlexColumnWidth(1),
-                  1: const FlexColumnWidth(2)
-                },
-                border: TableBorder.all(),
-                children: [
-                  _buildRow(
-                    label: 'Label',
-                    value: 'Value',
-                    textStyle: const TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  _buildRow(label: 'buildMode', value: buildMode.toString()),
-                  _buildRow(
-                      label: 'flavor',
-                      value: FlavorProvider.of(context).toString()),
-                ],
               ),
             ),
           ),
