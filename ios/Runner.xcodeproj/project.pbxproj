@@ -21,10 +21,10 @@
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		BF51A562F3E124AAA9EE0B0D /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FAAD607EFE2CB59134B69E /* Pods_Runner.framework */; };
 		FE2C362821E2C7880022B4FF /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE2C362721E2C7880022B4FF /* Profile.xcconfig */; };
-		FEC7B10E21E2072C0044CFDB /* DebugDevelopment.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B10A21E207260044CFDB /* DebugDevelopment.xcconfig */; };
-		FEC7B11021E2072C0044CFDB /* ReleaseProduction.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B10C21E2072C0044CFDB /* ReleaseProduction.xcconfig */; };
-		FEC7B11121E2072C0044CFDB /* ReleaseStaging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B10D21E2072C0044CFDB /* ReleaseStaging.xcconfig */; };
-		FEC7B11321E207950044CFDB /* ReleaseDevelopment.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B11221E207950044CFDB /* ReleaseDevelopment.xcconfig */; };
+		FEC7B10E21E2072C0044CFDB /* Debug-Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */; };
+		FEC7B11021E2072C0044CFDB /* Release-Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */; };
+		FEC7B11121E2072C0044CFDB /* Release-Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B10D21E2072C0044CFDB /* Release-Staging.xcconfig */; };
+		FEC7B11321E207950044CFDB /* Release-Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B11221E207950044CFDB /* Release-Development.xcconfig */; };
 		FEC7B11721E226C30044CFDB /* Staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B11421E226C20044CFDB /* Staging.xcconfig */; };
 		FEC7B11821E226C30044CFDB /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B11521E226C20044CFDB /* Production.xcconfig */; };
 		FEC7B11921E226C30044CFDB /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC7B11621E226C30044CFDB /* Development.xcconfig */; };
@@ -64,10 +64,10 @@
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1FAAD607EFE2CB59134B69E /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2C362721E2C7880022B4FF /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Profile.xcconfig; path = Flutter/Profile.xcconfig; sourceTree = "<group>"; };
-		FEC7B10A21E207260044CFDB /* DebugDevelopment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = DebugDevelopment.xcconfig; path = Flutter/DebugDevelopment.xcconfig; sourceTree = "<group>"; };
-		FEC7B10C21E2072C0044CFDB /* ReleaseProduction.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseProduction.xcconfig; path = Flutter/ReleaseProduction.xcconfig; sourceTree = "<group>"; };
-		FEC7B10D21E2072C0044CFDB /* ReleaseStaging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseStaging.xcconfig; path = Flutter/ReleaseStaging.xcconfig; sourceTree = "<group>"; };
-		FEC7B11221E207950044CFDB /* ReleaseDevelopment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseDevelopment.xcconfig; path = Flutter/ReleaseDevelopment.xcconfig; sourceTree = "<group>"; };
+		FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Debug-Development.xcconfig"; path = "Flutter/Debug-Development.xcconfig"; sourceTree = "<group>"; };
+		FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Release-Production.xcconfig"; path = "Flutter/Release-Production.xcconfig"; sourceTree = "<group>"; };
+		FEC7B10D21E2072C0044CFDB /* Release-Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Release-Staging.xcconfig"; path = "Flutter/Release-Staging.xcconfig"; sourceTree = "<group>"; };
+		FEC7B11221E207950044CFDB /* Release-Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Release-Development.xcconfig"; path = "Flutter/Release-Development.xcconfig"; sourceTree = "<group>"; };
 		FEC7B11421E226C20044CFDB /* Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Staging.xcconfig; path = Flutter/Staging.xcconfig; sourceTree = "<group>"; };
 		FEC7B11521E226C20044CFDB /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = Flutter/Production.xcconfig; sourceTree = "<group>"; };
 		FEC7B11621E226C30044CFDB /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = Flutter/Development.xcconfig; sourceTree = "<group>"; };
@@ -109,10 +109,10 @@
 				FEC7B11621E226C30044CFDB /* Development.xcconfig */,
 				FEC7B11421E226C20044CFDB /* Staging.xcconfig */,
 				FEC7B11521E226C20044CFDB /* Production.xcconfig */,
-				FEC7B10A21E207260044CFDB /* DebugDevelopment.xcconfig */,
-				FEC7B11221E207950044CFDB /* ReleaseDevelopment.xcconfig */,
-				FEC7B10D21E2072C0044CFDB /* ReleaseStaging.xcconfig */,
-				FEC7B10C21E2072C0044CFDB /* ReleaseProduction.xcconfig */,
+				FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */,
+				FEC7B11221E207950044CFDB /* Release-Development.xcconfig */,
+				FEC7B10D21E2072C0044CFDB /* Release-Staging.xcconfig */,
+				FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */,
 			);
 			name = Flutter;
 			sourceTree = "<group>";
@@ -232,13 +232,13 @@
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				FE2C362821E2C7880022B4FF /* Profile.xcconfig in Resources */,
-				FEC7B11321E207950044CFDB /* ReleaseDevelopment.xcconfig in Resources */,
+				FEC7B11321E207950044CFDB /* Release-Development.xcconfig in Resources */,
 				FEC7B11721E226C30044CFDB /* Staging.xcconfig in Resources */,
 				9740EEB41CF90195004384FC /* Debug.xcconfig in Resources */,
 				FEC7B11821E226C30044CFDB /* Production.xcconfig in Resources */,
-				FEC7B10E21E2072C0044CFDB /* DebugDevelopment.xcconfig in Resources */,
-				FEC7B11121E2072C0044CFDB /* ReleaseStaging.xcconfig in Resources */,
-				FEC7B11021E2072C0044CFDB /* ReleaseProduction.xcconfig in Resources */,
+				FEC7B10E21E2072C0044CFDB /* Debug-Development.xcconfig in Resources */,
+				FEC7B11121E2072C0044CFDB /* Release-Staging.xcconfig in Resources */,
+				FEC7B11021E2072C0044CFDB /* Release-Production.xcconfig in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				FEC7B11921E226C30044CFDB /* Development.xcconfig in Resources */,
 				2D5378261FAA1A9400D5DBA9 /* flutter_assets in Resources */,
@@ -432,7 +432,7 @@
 		};
 		97C147031CF9000F007C117D /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC7B10A21E207260044CFDB /* DebugDevelopment.xcconfig */;
+			baseConfigurationReference = FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -486,7 +486,7 @@
 		};
 		97C147061CF9000F007C117D /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC7B10A21E207260044CFDB /* DebugDevelopment.xcconfig */;
+			baseConfigurationReference = FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -514,7 +514,7 @@
 		};
 		FEC7B10421E1ECD00044CFDB /* Release-Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* ReleaseProduction.xcconfig */;
+			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -563,7 +563,7 @@
 		};
 		FEC7B10521E1ECD00044CFDB /* Release-Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* ReleaseProduction.xcconfig */;
+			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -590,7 +590,7 @@
 		};
 		FEC7B10621E1ECD20044CFDB /* Release-Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC7B10D21E2072C0044CFDB /* ReleaseStaging.xcconfig */;
+			baseConfigurationReference = FEC7B10D21E2072C0044CFDB /* Release-Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -639,7 +639,7 @@
 		};
 		FEC7B10721E1ECD20044CFDB /* Release-Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC7B10D21E2072C0044CFDB /* ReleaseStaging.xcconfig */;
+			baseConfigurationReference = FEC7B10D21E2072C0044CFDB /* Release-Staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -666,7 +666,7 @@
 		};
 		FEC7B10821E1ECD50044CFDB /* Release-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC7B11221E207950044CFDB /* ReleaseDevelopment.xcconfig */;
+			baseConfigurationReference = FEC7B11221E207950044CFDB /* Release-Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -715,7 +715,7 @@
 		};
 		FEC7B10921E1ECD50044CFDB /* Release-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC7B11221E207950044CFDB /* ReleaseDevelopment.xcconfig */;
+			baseConfigurationReference = FEC7B11221E207950044CFDB /* Release-Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
