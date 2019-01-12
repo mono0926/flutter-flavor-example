@@ -1,3 +1,4 @@
 #include "Release.xcconfig"
 FLUTTER_FLAVOR=Development
 PRODUCT_BUNDLE_IDENTIFIER=com.mono0926.flavor.development
+ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon-development
