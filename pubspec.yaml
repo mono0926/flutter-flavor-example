@@ -14,6 +14,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.7.0"
+  flutter_launcher_icons:
+    git:
+      url: git://github.com/sestegra/flutter_launcher_icons.git
+      ref: flavors
 flutter:
   uses-material-design: true
