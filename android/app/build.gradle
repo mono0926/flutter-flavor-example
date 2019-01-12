@@ -38,12 +38,38 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.mono0926.flavorexample"
+        applicationId "com.mono0926.flavor"
         minSdkVersion 16
         targetSdkVersion 27
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+
+        development {
+            dimension "default"
+            applicationId "com.mono0926.flavor.development"
+            versionCode 1
+            versionName "1.0"
+        }
+
+        staging {
+            dimension "default"
+            applicationId "com.mono0926.flavor.staging"
+            versionCode 1
+            versionName "1.0"
+        }
+
+        production {
+            dimension "default"
+            applicationId "com.mono0926.flavor"
+            versionCode 1
+            versionName "1.0"
+        }
     }
 
     buildTypes {
@@ -64,4 +90,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:multidex:1.0.3'
 }
+
+apply plugin: 'com.google.gms.google-services'

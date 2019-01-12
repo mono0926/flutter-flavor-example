@@ -1,4 +1,4 @@
-package com.mono0926.flavorexample
+package com.mono0926.flavor
 
 import android.os.Bundle
 
