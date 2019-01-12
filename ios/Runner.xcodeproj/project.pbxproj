@@ -458,7 +458,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE2C362721E2C7880022B4FF /* Profile.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = S8QB4VV633;
 				ENABLE_BITCODE = NO;
@@ -536,7 +535,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
@@ -617,7 +615,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
@@ -693,7 +690,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B11221E207950044CFDB /* Release-Development.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
@@ -768,7 +764,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
@@ -843,7 +838,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10D21E2072C0044CFDB /* Release-Staging.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
@@ -918,7 +912,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
