@@ -1,5 +1,5 @@
 FLUTTER_FLAVOR=Staging
-PRODUCT_BUNDLE_IDENTIFIER=com.mono0926.flavor.staging
+PRODUCT_BUNDLE_IDENTIFIER=com.mono0926.flavor.staging2
 DISPLAY_NAME=Flavor St
 FLUTTER_TARGET=lib/main_staging.dart
 ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon-staging

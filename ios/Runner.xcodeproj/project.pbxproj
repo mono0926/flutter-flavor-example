@@ -19,10 +19,10 @@
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		BF51A562F3E124AAA9EE0B0D /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FAAD607EFE2CB59134B69E /* Pods_Runner.framework */; };
+		FE20F6FD21E9C566001ECC3E /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE20F6FC21E9C566001ECC3E /* GoogleService-Info-Staging.plist */; };
 		FE41887221E31C8300F6CE9B /* Flavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41887121E31C8300F6CE9B /* Flavor.swift */; };
 		FE41887421E31C9000F6CE9B /* BuildMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41887321E31C9000F6CE9B /* BuildMode.swift */; };
 		FE41887621E35A1100F6CE9B /* GoogleService-Info-Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE41887521E35A1100F6CE9B /* GoogleService-Info-Production.plist */; };
-		FE41887921E35A5600F6CE9B /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE41887821E35A5600F6CE9B /* GoogleService-Info-Staging.plist */; };
 		FE47DB0321E373E5005BCE70 /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE47DB0221E373E5005BCE70 /* GoogleService-Info-Development.plist */; };
 /* End PBXBuildFile section */
 
@@ -59,11 +59,11 @@
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1FAAD607EFE2CB59134B69E /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE20F6FC21E9C566001ECC3E /* GoogleService-Info-Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Staging.plist"; sourceTree = "<group>"; };
 		FE2C362721E2C7880022B4FF /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Profile.xcconfig; path = Flutter/Profile.xcconfig; sourceTree = "<group>"; };
 		FE41887121E31C8300F6CE9B /* Flavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
 		FE41887321E31C9000F6CE9B /* BuildMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildMode.swift; sourceTree = "<group>"; };
 		FE41887521E35A1100F6CE9B /* GoogleService-Info-Production.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Production.plist"; sourceTree = "<group>"; };
-		FE41887821E35A5600F6CE9B /* GoogleService-Info-Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Staging.plist"; sourceTree = "<group>"; };
 		FE47DB0221E373E5005BCE70 /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
 		FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Debug-Development.xcconfig"; path = "Flutter/Debug-Development.xcconfig"; sourceTree = "<group>"; };
 		FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Release-Production.xcconfig"; path = "Flutter/Release-Production.xcconfig"; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				FE47DB0221E373E5005BCE70 /* GoogleService-Info-Development.plist */,
-				FE41887821E35A5600F6CE9B /* GoogleService-Info-Staging.plist */,
+				FE20F6FC21E9C566001ECC3E /* GoogleService-Info-Staging.plist */,
 				FE41887521E35A1100F6CE9B /* GoogleService-Info-Production.plist */,
 			);
 			name = Firebase;
@@ -247,10 +247,10 @@
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
-				FE41887921E35A5600F6CE9B /* GoogleService-Info-Staging.plist in Resources */,
 				2D5378261FAA1A9400D5DBA9 /* flutter_assets in Resources */,
 				FE47DB0321E373E5005BCE70 /* GoogleService-Info-Development.plist in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				FE20F6FD21E9C566001ECC3E /* GoogleService-Info-Staging.plist in Resources */,
 				FE41887621E35A1100F6CE9B /* GoogleService-Info-Production.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
