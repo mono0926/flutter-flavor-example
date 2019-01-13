@@ -65,6 +65,7 @@
 		FE41887121E31C8300F6CE9B /* Flavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
 		FE41887321E31C9000F6CE9B /* BuildMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildMode.swift; sourceTree = "<group>"; };
 		FE47DB0221E373E5005BCE70 /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
+		FE8917F121EABA21003A161E /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Debug-Development.xcconfig"; path = "Flutter/Debug-Development.xcconfig"; sourceTree = "<group>"; };
 		FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Release-Production.xcconfig"; path = "Flutter/Release-Production.xcconfig"; sourceTree = "<group>"; };
 		FEC7B10D21E2072C0044CFDB /* Release-Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Release-Staging.xcconfig"; path = "Flutter/Release-Staging.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				FE8917F121EABA21003A161E /* Runner.entitlements */,
 				FE41887721E35A1A00F6CE9B /* Firebase */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
@@ -219,6 +221,11 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = TYBERDUS7A;
 						LastSwiftMigration = 0910;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -459,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE2C362721E2C7880022B4FF /* Profile.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = TYBERDUS7A;
 				ENABLE_BITCODE = NO;
@@ -537,6 +545,7 @@
 			baseConfigurationReference = FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = TYBERDUS7A;
 				ENABLE_BITCODE = NO;
@@ -618,6 +627,7 @@
 			baseConfigurationReference = FEC7B10A21E207260044CFDB /* Debug-Development.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = TYBERDUS7A;
 				ENABLE_BITCODE = NO;
@@ -694,6 +704,7 @@
 			baseConfigurationReference = FEC7B11221E207950044CFDB /* Release-Development.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = TYBERDUS7A;
 				ENABLE_BITCODE = NO;
@@ -769,6 +780,7 @@
 			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = TYBERDUS7A;
 				ENABLE_BITCODE = NO;
@@ -844,6 +856,7 @@
 			baseConfigurationReference = FEC7B10D21E2072C0044CFDB /* Release-Staging.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = TYBERDUS7A;
 				ENABLE_BITCODE = NO;
@@ -919,6 +932,7 @@
 			baseConfigurationReference = FEC7B10C21E2072C0044CFDB /* Release-Production.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = TYBERDUS7A;
 				ENABLE_BITCODE = NO;
