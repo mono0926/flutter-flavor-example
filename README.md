@@ -1,4 +1,4 @@
-# flavor_example
+# Flavor Example
 
 Flutter flavor example app.
 
