@@ -1,15 +1,12 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flavor_example/app.config.dart';
 import 'package:flavor_example/build_mode.dart';
+import 'package:flavor_example/fab.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
 
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // 適当に叩いてるだけ
-    Firestore.instance.collection('foo').snapshots().listen(print);
-
     return const MaterialApp(
       title: 'Flutter Flavor Demo',
       home: HomePage(),
@@ -23,6 +20,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue[50],
+      floatingActionButton: Fab(),
       appBar: AppBar(
         title: const Text('Flutter Flavor Demo'),
       ),
