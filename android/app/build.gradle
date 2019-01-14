@@ -43,7 +43,6 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.mono0926.flavor"
         minSdkVersion 16
         targetSdkVersion 27
@@ -59,22 +58,16 @@ android {
         development {
             dimension "default"
             applicationId "com.mono0926.flavor.development"
-            versionCode 1
-            versionName "1.0"
         }
 
         staging {
             dimension "default"
             applicationId "com.mono0926.flavor.staging"
-            versionCode 1
-            versionName "1.0"
         }
 
         production {
             dimension "default"
             applicationId "com.mono0926.flavor"
-            versionCode 1
-            versionName "1.0"
         }
     }
 
