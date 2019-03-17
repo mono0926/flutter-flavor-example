@@ -1,6 +1,8 @@
 import 'package:flavor_example/app.config.dart';
 import 'package:flavor_example/build_mode.dart';
 import 'package:flavor_example/fab.dart';
+import 'package:flavor_example/util/logger.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
 
@@ -109,9 +111,40 @@ class HomePage extends StatelessWidget {
               );
             },
           ),
+          RaisedButton(
+            child: const Text('フィボナッチ(　´･‿･｀)'),
+            onPressed: () async {
+              final stopwatch = Stopwatch()..start();
+//              await compute(_hoge, 3);
+              await compute(_hoge, 40);
+//              await _xxx('xxx');
+              logger.info(stopwatch.elapsedMilliseconds);
+            },
+          ),
+          RaisedButton(
+            child: const Text('フィボナッチ(　´･‿･｀)'),
+            onPressed: () async {
+              final stopwatch = Stopwatch()..start();
+//              await compute(_hoge, 3);
+              _hoge(40);
+//              await _xxx('xxx');
+              logger.info(stopwatch.elapsedMilliseconds);
+            },
+          ),
         ],
       ),
     );
+  }
+
+  static String _hoge(int n) {
+    final result = _fibonacci(n);
+    logger.info('result: $result');
+//    logger.info(foo);
+    return 'bar';
+  }
+
+  static Future<String> _xxx(String foo) {
+    return Future.value('bar');
   }
 
   TableRow _buildRow({
@@ -146,10 +179,14 @@ class InfoRow extends StatelessWidget {
     Key key,
     @required this.label,
     @required this.value,
-  }) : super(key: key);
+  }) : sufinper(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text('$label: $value');
   }
+}
+
+int _fibonacci(int n) {
+  return n < 2 ? n : (_fibonacci(n - 1) + _fibonacci(n - 2));
 }
