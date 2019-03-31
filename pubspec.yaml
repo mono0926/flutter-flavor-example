@@ -2,7 +2,7 @@ name: flavor_example
 description: A new Flutter application.
 version: 1.0.2
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.1.0 <3.0.0'
 dependencies:
   flutter:
     sdk: flutter
@@ -16,7 +16,7 @@ dev_dependencies:
     sdk: flutter
   flutter_launcher_icons:
     git:
-      url: git://github.com/sestegra/flutter_launcher_icons.git
+      url: https://github.com/fluttercommunity/flutter_launcher_icons.git
       ref: flavors
 flutter:
   uses-material-design: true
