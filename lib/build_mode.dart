@@ -10,4 +10,4 @@ BuildMode buildMode = (() {
     return true;
   }());
   return result;
-})();
+}());
