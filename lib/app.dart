@@ -1,6 +1,6 @@
-import 'package:flavor_example/app.config.dart';
 import 'package:flavor_example/build_mode.dart';
 import 'package:flavor_example/fab.dart';
+import 'package:flavor_example/flavor.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
 
