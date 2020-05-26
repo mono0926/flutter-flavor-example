@@ -1,11 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:flavor_example/run.dart';
 
-import 'app.dart';
 import 'flavor.dart';
 
-void main() {
-  runApp(FlavorProvider(
-    flavor: Flavor.development,
-    child: App(),
-  ));
-}
+void main() => run(flavor: Flavor.development);

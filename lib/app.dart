@@ -3,6 +3,7 @@ import 'package:flavor_example/fab.dart';
 import 'package:flavor_example/flavor.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
+import 'package:provider/provider.dart';
 
 class App extends StatelessWidget {
   @override
@@ -27,16 +28,16 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           const Padding(
-            padding: const EdgeInsets.all(8),
-            child: const Text('Flutter Info'),
+            padding: EdgeInsets.all(8),
+            child: Text('Flutter Info'),
           ),
           Card(
             child: Padding(
               padding: const EdgeInsets.all(8),
               child: Table(
-                columnWidths: {
-                  0: const FlexColumnWidth(1),
-                  1: const FlexColumnWidth(2)
+                columnWidths: const {
+                  0: FlexColumnWidth(1),
+                  1: FlexColumnWidth(2),
                 },
                 border: TableBorder.all(),
                 children: [
@@ -48,14 +49,14 @@ class HomePage extends StatelessWidget {
                   _buildRow(label: 'buildMode', value: buildMode.toString()),
                   _buildRow(
                       label: 'flavor',
-                      value: FlavorProvider.of(context).toString()),
+                      value: Provider.of<Flavor>(context).toString()),
                 ],
               ),
             ),
           ),
           const Padding(
-            padding: const EdgeInsets.all(8),
-            child: const Text('PackageInfo'),
+            padding: EdgeInsets.all(8),
+            child: Text('PackageInfo'),
           ),
           Card(
             child: Padding(
@@ -68,9 +69,9 @@ class HomePage extends StatelessWidget {
                   }
                   final info = snap.data;
                   return Table(
-                    columnWidths: {
-                      0: const FlexColumnWidth(1),
-                      1: const FlexColumnWidth(2)
+                    columnWidths: const {
+                      0: FlexColumnWidth(1),
+                      1: FlexColumnWidth(2)
                     },
                     border: TableBorder.all(),
                     children: [
@@ -99,7 +100,7 @@ class HomePage extends StatelessWidget {
               return AboutListTile(
                 icon: const Icon(Icons.info),
                 applicationName: info.appName,
-                applicationIcon: const Icon(Icons.camera), // TODO:
+                applicationIcon: const Icon(Icons.camera),
                 applicationVersion: info.version,
                 applicationLegalese: 'desc',
                 aboutBoxChildren: <Widget>[
@@ -139,14 +140,14 @@ class HomePage extends StatelessWidget {
 }
 
 class InfoRow extends StatelessWidget {
-  final String label;
-  final String value;
-
   const InfoRow({
     Key key,
     @required this.label,
     @required this.value,
   }) : super(key: key);
+
+  final String label;
+  final String value;
 
   @override
   Widget build(BuildContext context) {

@@ -9,11 +9,13 @@ dependencies:
   cupertino_icons: ^0.1.2
   simple_logger: any
   package_info: any
+  provider: any
   firebase_auth: any
   cloud_firestore: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  pedantic_mono:
   flutter_launcher_icons:
     git:
       url: https://github.com/fluttercommunity/flutter_launcher_icons.git

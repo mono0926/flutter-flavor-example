@@ -15,7 +15,7 @@ class _FabState extends State<Fab> {
   Widget build(BuildContext context) {
     return FloatingActionButton.extended(
       onPressed: () {
-        _counterRef.setData({'value': _count + 1});
+        _counterRef.setData(<String, dynamic>{'value': _count + 1});
       },
       icon: const Icon(Icons.add),
       label: Text('Count: $_count'),
