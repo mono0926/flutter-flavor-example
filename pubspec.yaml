@@ -22,3 +22,7 @@ dev_dependencies:
       ref: flavors
 flutter:
   uses-material-design: true
+# flutter_launcher_iconsはflavorで指定しているが、この指定も併記しないと動かないのでワークアラウンド
+flutter_icons:
+  android: true
+  ios: true
