@@ -6,7 +6,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^0.1.2
+  cupertino_icons: any
+  enum_to_string: any
   simple_logger: any
   package_info: any
   provider: any
