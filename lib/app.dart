@@ -1,6 +1,7 @@
 import 'package:flavor_example/build_mode.dart';
 import 'package:flavor_example/fab.dart';
 import 'package:flavor_example/flavor.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
 import 'package:provider/provider.dart';
@@ -49,7 +50,7 @@ class HomePage extends StatelessWidget {
                   _buildRow(label: 'buildMode', value: buildMode.toString()),
                   _buildRow(
                       label: 'flavor',
-                      value: Provider.of<Flavor>(context).toString()),
+                      value: describeEnum(context.watch<Flavor>())),
                 ],
               ),
             ),
